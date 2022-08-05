@@ -123,7 +123,7 @@ if which tmux >/dev/null 2>&1; then
       test -z "$TMUX" && (tmux attach || tmux new-session)
     fi
 fi
-alias prox4='proxychains4 -f ~/proxychains4.conf '
+alias prox4='proxychains4 -f ~/.config/proxychains4.conf '
 
 PATH="/home/joker/perl5/bin${PATH:+:${PATH}}"; export PATH;
 PERL5LIB="/home/joker/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
@@ -133,4 +133,4 @@ PERL_MM_OPT="INSTALL_BASE=/home/joker/perl5"; export PERL_MM_OPT;
 
 export LD_LIBRARY_PATH=~/.local/lib:$LD_LIBRARY_PATH
 alias LS=ls
-alias fd='fd -g '
+alias fd='fd --glob -H '
