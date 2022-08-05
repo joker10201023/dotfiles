@@ -24,7 +24,7 @@ ZSH_THEME="robbyrussell"
 # HYPHEN_INSENSITIVE="true"
 
 # Uncomment one of the following lines to change the auto-update behavior
-# zstyle ':omz:update' mode disabled  # disable automatic updates
+zstyle ':omz:update' mode disabled  # disable automatic updates
 # zstyle ':omz:update' mode auto      # update automatically without asking
 # zstyle ':omz:update' mode reminder  # just remind me to update when it's time
 
@@ -119,7 +119,7 @@ source ~/.local/src/up.sh
 # TMUX
 if which tmux >/dev/null 2>&1; then
     #if not inside a tmux session, and if no session is started, start a new session
-    if [ ${VSCODE_GIT_IPC_HANDLE}x = x ]; then 
+    if [ ${VSCODE_GIT_IPC_HANDLE}x = x ]; then
       test -z "$TMUX" && (tmux attach || tmux new-session)
     fi
 fi
