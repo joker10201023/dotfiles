@@ -1,0 +1,9 @@
+[user]
+	email = zhipeng.shi@horizon.ai
+	name = zhipeng.shi
+[color]
+	ui = auto
+[pretty]
+  fixes = Fixes: %h (\"%s\")
+[credential]
+	helper = store
