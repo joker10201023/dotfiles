@@ -1,1 +1,1 @@
-/home/zhipeng.shi/.SpaceVim
+.SpaceVim
